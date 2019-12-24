@@ -8,3 +8,6 @@ x0rtyx0rt Infra repository
 
 bastion_IP = 34.77.49.2
 someinternalhost_IP = 10.132.0.4
+
+testapp_IP = 35.204.6.182
+testapp_port = 9292
