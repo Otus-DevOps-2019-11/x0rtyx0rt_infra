@@ -11,7 +11,7 @@ someinternalhost_IP = 10.132.0.4
 
 
 #________________HW_testAPP
-testapp_IP = 35.204.6.182
+testapp_IP = 35.204.180.21
 testapp_port = 9292
 
 ###glcoud_add instance && deploy_APP###
@@ -30,3 +30,7 @@ sudo systemctl enable mongod
 #deploy
 cd /home/appuser && git clone -b monolith https://github.com/express42/reddit.git
 cd reddit && bundle install && puma -d'
+
+
+###gcloud_add FW_rule
+gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --target-tags=puma-server
