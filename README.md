@@ -19,5 +19,7 @@ gcloud compute instances create reddit-app --boot-disk-size=10GB --image-family 
 --image-project=ubuntu-os-cloud --machine-type=g1-small --tags puma-server --restart-on-failure \
 --metadata-from-file startup-script=startup_script
 
+###gcloud_del FW_Rule
+gcloud compute firewall-rules delete default-puma-server
 ###gcloud_add FW_rule
 gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --target-tags=puma-server
