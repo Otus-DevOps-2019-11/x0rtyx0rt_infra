@@ -1,1 +1,2 @@
-/packer/ubuntu16.json
+/packer/old_ubuntu16.json
+/packer/variables.json
