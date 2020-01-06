@@ -23,3 +23,10 @@ gcloud compute instances create reddit-app --boot-disk-size=10GB --image-family 
 gcloud compute firewall-rules delete default-puma-server
 ###gcloud_add FW_rule
 gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --target-tags=puma-server
+
+#_______________HW_packer
+#скрипт для развертывания VM из образа packer: config-scripts/create-reddit-vm.sh
+#скрипты для установки Mongodb и ruby: /packer/scripts
+#скрипты для установки закрузки приложения и настройки автозапуска через systemd: /packer/files
+#создание образа packer: ubuntu16.json && variables.json
+#создание образа packer для задания со *: immutable.json
