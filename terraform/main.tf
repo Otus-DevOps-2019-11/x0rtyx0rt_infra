@@ -10,7 +10,7 @@ provider "google" {
   # ID проекта
   project = var.project
 
-  region = var.project
+  region = var.region
 }
 
 resource "google_compute_instance" "app" {
