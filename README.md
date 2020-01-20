@@ -30,3 +30,6 @@ gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --targ
 #скрипты для установки закрузки приложения и настройки автозапуска через systemd: /packer/files
 #создание образа packer: ubuntu16.json && variables.json
 #создание образа packer для задания со *: immutable.json
+
+#______________HW Terraform-1
+# ДЗ №1 по терраформу добавлено в папку /terraform (branch terraform-1)
