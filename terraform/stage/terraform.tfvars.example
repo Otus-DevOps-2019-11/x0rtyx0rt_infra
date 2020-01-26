@@ -1,0 +1,5 @@
+project         = "Project-ID"
+public_key_path = "~/.ssh/appuser.pub"
+disk_image      = "reddit-base"
+region          = "europe-west1-b"
+private_key     = "~/.ssh/appuser"
