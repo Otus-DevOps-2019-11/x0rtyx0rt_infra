@@ -33,3 +33,11 @@ gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --targ
 
 #______________HW Terraform-1
 # ДЗ №1 по терраформу добавлено в папку /terraform (branch terraform-1)
+
+
+#______________HW Ansible-1
+#При выолнении
+$ ansible-playbook clone.yml
+#после комманды
+$ ansible app -m command -a 'rm -rf ~/reddit'
+#Результат не меняется, т.к. папка удалена и поэтому Changed=1. Без удаления папки - результат Changed=0 соответственно
