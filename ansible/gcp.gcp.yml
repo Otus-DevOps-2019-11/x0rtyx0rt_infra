@@ -1,5 +1,0 @@
-plugin: gcp_compute
-project:
-  - infra-262406
-auth_kind: serviceaccount
-service_account_file: /home/x0rt/infra-262406-d5b9b42443ef.json
