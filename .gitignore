@@ -1,2 +1,3 @@
 /packer/old_ubuntu16.json
 /packer/variables.json
+*.pem
